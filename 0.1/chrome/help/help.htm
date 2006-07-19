@@ -1,0 +1,145 @@
+﻿<HTML>
+<HEAD>
+<TITLE>我的小擴充軟體 說明</TITLE>
+</HEAD>
+<BODY>
+<H1>我的小擴充軟體 說明</H1>
+這個小擴充軟體可以讓你的火狐有更多的秘技，你也可以自行加入你想要的秘技。<BR>
+這軟體現時有flash延時和無名網誌提示兩個小秘技，希望日後可以慢慢加入更多。<BR>
+<BR>
+本軟體另一個特色就是它是自由軟體。自由軟體包括有四方面的自由：<BR>
+ * 任意使用的自由；<BR>
+ * 研究及修改以符合自己用途的自由；<BR>
+ * 拷貝給親朋好友的自由；<BR>
+ * 散布修改後的軟體的自由。<BR>
+除了小圖的授權是歸於原作者外，所有的程式和檔案都是以GNU GPL授權。<BR>
+<BR>
+如果想多點認識自由軟體，可以參考洪老師和藹可親的介紹文章阿 ^^<BR>
+<A HREF="http://www.cyut.edu.tw/~ckhung/">http://www.cyut.edu.tw/~ckhung/</A>(見「短文 [articles]」和「演講摘要 [slides]」)<BR>
+<BR>
+本軟體是v0.1版，還有很多地方需要改善，請多多指教。<BR>
+<H2>如何安裝</H2>
+(努力中)
+<H2>普通功能－flash延時</H2>
+<IMG SRC="delay.png"><BR>
+利用這個功能，可以減慢flash小遊戲的速度，令遊戲變得更易。<BR>
+用戶選擇「使用」，延時功能就會開始。用右面的捲軸控制延時的多少。<BR>
+<H2>網站特有功能－無名網誌</H2>
+<IMG SRC="wretchblog.png"><BR>
+當編輯無名網誌時(一般編輯器)，擴充軟體可以提供字體、格式和表情等的提示。<BR>
+<H2>發揮軟體自由，修改「我的小擴充軟體」，讓它更貼身</H2>
+這個小小的軟體除了可以讓你用它，你也可以隨意去修改它。
+它是以XUL和Javascript技術開發，如果你對HTML、CSS等咚咚有一點點認識，很容易就可以學會。
+你需要一個跟UTF-8和BOM兼容的檔案修改程式(如Windows中的Notepad記事本)。
+<H3>火狐的特別設定</H3>
+(如果是Windows安裝IETab)<BR>
+<BR>
+修改一下profile中的user.js，可以令開發更順手。<BR>
+<BR>
+先看看這頁的url路徑。如果你是用Windows，路徑大概會是：<BR>
+file:///C:/Documents%20and%20Settings/用戶名字/Application%20Data/Mozilla/Firefox/Profiles/???.??/extensions/Little@black.rabbit/chrome/help/help.htm<BR>
+<BR>
+Profile的路徑就是：<BR>
+file:///C:/Documents%20and%20Settings/用戶名字/Application%20Data/Mozilla/Firefox/Profiles/???.??/<BR>
+<BR>
+你用這個Profile的路徑來開一個新的分頁，就可以看到Profile裡面的檔案。如果你是用Windows，可以按右下角的火狐小圖，就會變成用Windows來做檔案管理。
+打開user.js，加入以下幾句：<BR>
+<pre>
+// Log errors in chrome file to the Javascript Console
+user_pref( &quot;javascript.options.showInConsole&quot;, true);
+// Disable XUL cache, so chrome changes do not require a restart
+user_pref( &quot;nglayout.debug.disable_xul_cache&quot;, true);
+// dump() function outputs to console if application started with -console flag
+user_pref( &quot;browser.dom.window.dump.enabled&quot;, true);
+// Enable strict javascript warnings, to produce clean extensions
+user_pref( &quot;javascript.options.strict&quot;, true);
+</pre>
+<H3>得到擴充軟體在電腦中的路徑</H3>
+先看看這頁的url路徑。如果你是用Windows，路徑大概會是：<BR>
+file:///C:/Documents%20and%20Settings/用戶名字/Application%20Data/Mozilla/Firefox/Profiles/???.??/extensions/Little@black.rabbit/chrome/help/help.htm<BR>
+<BR>
+擴充軟體的路徑就是：<BR>
+file:///C:/Documents%20and%20Settings/用戶名字/Application%20Data/Mozilla/Firefox/Profiles/???.??/extensions/Little@black.rabbit/<BR>
+<BR>
+你用這個擴充軟體的路徑來開一個新的分頁，就可以看到擴充軟體裡面的檔案。<BR>
+<IMG SRC="ExtDir.png"><BR>
+如果你是用Windows，可以按右下角的火狐小圖，就會變成用Windows來做檔案管理。<BR>
+<H3>增加無名網誌提示</H3>
+<img src="http://littleext.openfoundry.org/onion/dream.gif"><img src="http://littleext.openfoundry.org/onion/throwtable.gif"><BR>
+如果要在好夢小圖旁加上翻桌，要怎辦？<BR>
+<BR>
+首先要找出相關的路徑和檔案：<BR>
+擴充軟體的路徑/chrome/wretch<BR>
+XUL表現架構 a_popup.xul<BR>
+程式 a_popup.js<BR>
+<BR>
+打開a_popup.xul，在底部會找到這幾句：<BR>
+<pre>
+  &lt;toolbar id=&quot;toolico7&quot;&gt;
+    &lt;toolbarbutton id=&quot;dream.gif&quot; 
+      image=&quot;onion/dream.gif&quot;
+      onclick=&quot;putossfbutton(this.image);&quot;/&gt;
+  &lt;/toolbar&gt;
+</pre>
+toolbar就是指工具列，toolbarbutton就是指工具列上的一個按鈕。
+要加入翻桌按鈕，語句法是：<BR>
+<pre>
+  &lt;toolbar id=&quot;toolico7&quot;&gt;
+    &lt;toolbarbutton id=&quot;dream.gif&quot; 
+      image=&quot;onion/dream.gif&quot;
+      onclick=&quot;putossfbutton(this.image);&quot;/&gt;
+    &lt;toolbarbutton id=&quot;throwtable.gif&quot; 
+      image=&quot;onion/throwtable.gif&quot;/&gt;
+  &lt;/toolbar&gt;
+</pre>
+你也要下載翻桌小圖，儲存在擴充軟體的路徑/chrome/wretch/throwtable.gif。
+這樣，小圖就加了，不過按下去並不會有什麼反應。我們需要的反應是把
+&lt;img src=&quot;http://littleext.openfoundry.org/onion/throwtable.gif&quot;&gt;
+這一句加入網誌內容中。在a_popup.js中已經有一個寫好了的函數puttextarea，
+只要把以上那句img src訂為函數參數即可。當然也要遵守HTML的規定，把：<BR>
+&lt; 變成 &amp;lt;<BR>
+&gt; 變成 &amp;gt;<BR>
+&quot; 變成 &amp;quot;<BR>
+程式就變成：<BR>
+<pre>
+    &lt;toolbarbutton id=&quot;throwtable.gif&quot; 
+      image=&quot;onion/throwtable.gif&quot;
+      onclick=&quot;puttextarea('&amp;lt;img src=&amp;quot;http://littleext.openfoundry.org/onion/throwtable.gif&amp;quot;&amp;gt;');"/&gt;
+</pre>
+puttextarea的參數實在太長了，於是寫了另一個專為http://littleext.openfoundry.org/
+上面的小圖而設的函數putossfbutton。程式就可以簡化為。
+<pre>
+    &lt;toolbarbutton id=&quot;throwtable.gif&quot; 
+      image=&quot;onion/throwtable.gif&quot;
+      onclick=&quot;putossfbutton(this.image);&quot;/&gt;
+</pre>
+<H3>增加普通功能</H3>
+普通功能的相關路徑和檔案：<BR>
+擴充軟體的路徑/chrome/default<BR>
+XUL表現架構 a_popup.xul<BR>
+程式 a_popup.js<BR>
+<H3>增加無名網誌以外的特有功能</H3>
+例如你想為aaa.com寫一個特有功能，你先打開擴充軟體路徑/chrome/，在sample目錄是個範例，
+把它拷貝，名為aaa目錄。然後在little.js中的little_toolbar_popup函數加入新的條件：
+<pre>
+  if (locstr.indexOf(&quot;www.wretch.cc/blog/modify.php&quot;)!=-1) {
+    var a_popup = getCurWW().openWindow(null,
+      &quot;chrome://little/content/wretch/a_popup.xul&quot;, &quot;a_popup&quot;, 
+      &quot;chrome,left=&quot;+popupleft+&quot;,top=&quot;+popuptop, null);
+  }else if (locstr.indexOf(&quot;aaa.com&quot;)!=-1) {
+    var a_popup = getCurWW().openWindow(null,
+      &quot;chrome://little/content/aaa/a_popup.xul&quot;, &quot;a_popup&quot;, 
+      &quot;chrome,left=&quot;+popupleft+&quot;,top=&quot;+popuptop, null);
+  }else{
+    var a_popup = getCurWW().openWindow(null,
+      &quot;chrome://little/content/default/a_popup.xul&quot;, &quot;a_popup&quot;, 
+      &quot;chrome,left=&quot;+popupleft+&quot;,top=&quot;+popuptop, null);
+  }
+</pre>
+當你在aaa.com啟動我的小擴充軟體，擴充軟體路徑/chrome/aaa/a_popup.xul就會被呼叫出來了。
+<H2>鳴謝</H2>
+<A HREF="http://rt.openfoundry.org/">中研院資訊所自由軟體鑄造場</A><BR>
+<A HREF="http://www.wretch.cc/">無名小站</A><BR>
+<A HREF="http://blog.yam.com/onion_club/">洋蔥酷樂部</A><BR>
+</BODY>
+</HTML>
