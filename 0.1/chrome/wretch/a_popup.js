@@ -1,5 +1,17 @@
 ﻿const wretchmsnpath="http://pic.wretch.cc/icon/blog/smiley/msn/"
 const ossfpath="http://littleext.openfoundry.org/"
+var closeflag=new Boolean(false);
+
+function OnUnload() {
+  setlittleIntPref("screenX",window.screenX);
+  setlittleIntPref("screenY",window.screenY);
+}
+
+function closeYN() {
+  if (closeflag) {
+    window.close();
+  }
+}
 
 function addwmpath(instring) {
   return wretchmsnpath + instring;

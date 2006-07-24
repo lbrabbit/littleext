@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>Little@black.rabbit</em:id>
     <em:name>我的小擴充套件</em:name>
-    <em:version>0.1</em:version>
+    <em:version>0.2</em:version>
     <em:creator>小兔黑黑</em:creator>
     <em:description>My Little Extension</em:description>
     <em:homepageURL>http://www.foo.com/</em:homepageURL>

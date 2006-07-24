@@ -2,7 +2,8 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
 <window
-  id="a_popup" title="Sample" onload="initwin();"  
+  id="a_popup" title="Sample" onunload="OnUnload();"
+  onblur="window.close();"
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script type="application/x-javascript" src="a_popup.js"/>
   <script type="application/x-javascript" src="../lib.js"/>

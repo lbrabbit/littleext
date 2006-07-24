@@ -1,3 +1,13 @@
+var prefs=Components.classes["@mozilla.org/preferences-service;1"]
+  .getService(Components.interfaces.nsIPrefService);
+var branch=prefs.getDefaultBranch("littleext.");
+if (branch.getPrefType("screenX")!=prefs.PREF_INT
+  || branch.getPrefType("screenY")!=prefs.PREF_INT) {
+  branch.setIntPref("screenX",100);
+  branch.setIntPref("screenY",100);
+  prefs.savePrefFile(null);
+}
+
 function little_toolbar_popup (popupleft,popuptop) {
 //alert (popupleft+' '+popuptop);
   var bW = getCurBrowser();

@@ -5,6 +5,12 @@
   <script type="application/x-javascript" src="lib.js"/>
   <script type="application/x-javascript" src="little.js"/>
 
+  <keyset>
+    <key id="little_cmd" modifiers="control alt" key="L" 
+      oncommand="little_toolbar_popup(getlittleIntPref('screenX'),
+      getlittleIntPref('screenY'));"/>
+  </keyset>
+
   <statusbar id="status-bar">
     <statusbarpanel id="little-button" class="statusbarpanel-menu-iconic"
       label="小" tooltiptext="我的小擴充套件"

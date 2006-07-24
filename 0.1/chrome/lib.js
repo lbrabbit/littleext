@@ -74,3 +74,18 @@ function helppath(){
   }
   return "file://" + path + "/chrome/help/help.htm";
 }
+
+function getlittleIntPref(prefname) {
+  var branch = Components.classes["@mozilla.org/preferences-service;1"]
+  .getService(Components.interfaces.nsIPrefService)
+  .getBranch("littleext.");
+  return branch.getIntPref(prefname);  
+}
+
+function setlittleIntPref(prefname,intvalue) {
+  var prefs=Components.classes["@mozilla.org/preferences-service;1"]
+  .getService(Components.interfaces.nsIPrefService);
+  var branch=prefs.getBranch("littleext.");
+  branch.setIntPref(prefname,intvalue);  
+  prefs.savePrefFile(null);  
+}

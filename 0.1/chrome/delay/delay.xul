@@ -1,17 +1,24 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://little/content/delay/delay.css" type="text/css"?>
 
-<window
-  id="a_popup" title="flash延時" onload="UpdateText();"  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="Delay-Overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script type="application/x-javascript" src="delay.js"/>
-  <hbox pack="center">
-    <label style="font-size:large">flash延時</label>
-  </hbox>
-  <hbox>
-    <checkbox id="UseDelay" label="使用" checked="false" 
-      onclick="window.setTimeout('StartDelay();',500);" />    
-    <scrollbar id="Dfactor" flex="10" curpos="199" maxpos="999" 
-      onmousemove="UpdateText();" onclick="UpdateText();"/>
-    <textbox id="txtfactor" readonly="true" size="6" value="0"/>
-  </hbox>
-</window>
+  <toolbox id="navigator-toolbox">
+    <toolbar id="delay-toolbar" toolbarname="Delay Toolbar"
+       class="chromeclass-toolbar" context="toolbar-context-menu" 
+       hidden="false" collapsed="true" persist="hidden">
+       <toolbaritem flex="0">
+         <checkbox id="UseDelay" label="使用flash延時" checked="false" 
+           onclick="window.setTimeout('StartDelay();',500);" />    
+       </toolbaritem>
+       <toolbaritem flex="1">
+         <scrollbar id="Dfactor" flex="10" curpos="199" maxpos="999" 
+           onmousemove="UpdateText();" onclick="UpdateText();"/>
+       </toolbaritem>
+       <toolbaritem flex="0">
+         <label id="txtfactor" size="6" value="200"/>
+       </toolbaritem>
+    </toolbar>
+  </toolbox>
+</overlay>
