@@ -1,0 +1,310 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window
+  id="a_popup" title="Wretch" onunload="OnUnload();"
+  onload="OnLoad();"  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="a_popup.js"/>
+  <script type="application/x-javascript" src="../images/lib.js"/>
+  <script type="application/x-javascript" src="../lib.js"/>
+  <tabbox id="mainbox">
+    <tabs>
+      <tab label="洋蔥"/>
+      <tab label="彎彎"/>
+      <tab label="小圖"/>
+      <tab label="格式"/>
+    </tabs>
+    <tabpanels>
+      <tabpanel id="onion">
+        <vbox>
+          <label value="作者：Ethan"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://blog.yam.com/onion_club" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+          <toolbar id="onionico1">
+            <toolbarbutton id="onion/sweat.gif" 
+              image="../images/onion/sweat.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/haha.gif" 
+              image="../images/onion/haha.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/throwtable.gif" 
+              image="../images/onion/throwtable.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/alone.gif" 
+              image="../images/onion/alone.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico2">
+            <toolbarbutton id="onion/dream.gif" 
+              image="../images/onion/dream.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/bye1.gif" 
+              image="../images/onion/bye1.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/shalom.gif" 
+              image="../images/onion/shalom.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/seaweeddance.gif" 
+              image="../images/onion/seaweeddance.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="cwwany">
+        <vbox>
+          <label value="作者：彎彎"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/cwwany" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+          <toolbar id="cwwanyico1">
+            <toolbarbutton id="cwwany/hot.gif" 
+              image="../images/cwwany/hot.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/cold.gif" 
+              image="../images/cwwany/cold.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/sleepy.gif" 
+              image="../images/cwwany/sleepy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/busy.gif" 
+              image="../images/cwwany/busy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+          <toolbar id="cwwanyico2">
+            <toolbarbutton id="cwwany/happy.gif" 
+              image="../images/cwwany/happy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/congra.gif" 
+              image="../images/cwwany/congra.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/poor.gif" 
+              image="../images/cwwany/poor.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/empty.gif" 
+              image="../images/cwwany/empty.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="icons">
+        <vbox>
+          <toolbar id="toolico1">
+            <toolbarbutton id="regular_smile.gif" 
+              image="regular_smile.gif"
+              onclick='putintbutton(this.id);'/>
+            <toolbarbutton id="sad_smile.gif" 
+              image="sad_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="wink_smile.gif" 
+              image="wink_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="teeth_smile.gif" 
+              image="teeth_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="confused_smile.gif" 
+              image="confused_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="tounge_smile.gif" 
+              image="tounge_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="embaressed_smile.gif" 
+              image="embaressed_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="omg_smile.gif" 
+              image="omg_smile.gif"
+              onclick="putintbutton(this.id);"/>
+          </toolbar>
+          <toolbar id="toolico2">
+            <toolbarbutton id="whatchutalkingabout_smile.gif" 
+              image="whatchutalkingabout_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="angry_smile.gif" 
+              image="angry_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="angel_smile.gif" 
+              image="angel_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="shades_smile.gif" 
+              image="shades_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="devil_smile.gif" 
+              image="devil_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="cry_smile.gif" 
+              image="cry_smile.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="lightbulb.gif" 
+              image="lightbulb.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="thumbs_down.gif" 
+              image="thumbs_down.gif"
+              onclick="putintbutton(this.id);"/>
+          </toolbar>
+          <toolbar id="toolico3">
+            <toolbarbutton id="thumbs_up.gif" 
+              image="thumbs_up.gif"
+              onclick='putintbutton(this.id);'/>
+            <toolbarbutton id="heart.gif" 
+              image="heart.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="broken_heart.gif" 
+              image="broken_heart.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="kiss.gif" 
+              image="kiss.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="envelope.gif" 
+              image="envelope.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y01.gif" 
+              image="y01.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y02.gif" 
+              image="y02.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y03.gif" 
+              image="y03.gif"
+              onclick="putintbutton(this.id);"/>
+          </toolbar>
+          <toolbar id="toolico4">
+            <toolbarbutton id="y04.gif" 
+              image="y04.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y05.gif" 
+              image="y05.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y06.gif" 
+              image="y06.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y07.gif" 
+              image="y07.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y08.gif" 
+              image="y08.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y09.gif" 
+              image="y09.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y10.gif" 
+              image="y10.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y11.gif" 
+              image="y11.gif"
+              onclick="putintbutton(this.id);"/>
+          </toolbar>
+          <toolbar id="toolico5">
+            <toolbarbutton id="y12.gif" 
+              image="y12.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y13.gif" 
+              image="y13.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y14.gif" 
+              image="y14.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y15.gif" 
+              image="y15.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y16.gif" 
+              image="y16.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y17.gif" 
+              image="y17.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y18.gif" 
+              image="y18.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y19.gif" 
+              image="y19.gif"
+              onclick="putintbutton(this.id);"/>
+          </toolbar>
+          <toolbar id="toolico6">
+            <toolbarbutton id="y20.gif" 
+              image="y20.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y21.gif" 
+              image="y21.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y22.gif" 
+              image="y22.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y23.gif" 
+              image="y23.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y24.gif" 
+              image="y24.gif"
+              onclick="putintbutton(this.id);"/>
+            <toolbarbutton id="y25.gif" 
+              image="y25.gif"
+              onclick="putintbutton(this.id);"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="fmt">
+        <vbox>
+          <toolbar id="toolfmt1">
+            <toolbarbutton id="BoldButton" label="粗" style="font-weight:bold;" 
+              onclick="puttextarea('&lt;span style=&quot;font-weight:bold;&quot;&gt;&lt;/span&gt;');"/>
+            <toolbarbutton id="ItalicButton" label="斜" style="font-style:italic;" 
+              onclick="puttextarea('&lt;span style=&quot;font-style:italic;&quot;&gt;&lt;/span&gt;');"/>
+            <toolbarbutton id="UnderlineButton" label="底線" style="text-decoration:underline;" 
+              onclick="puttextarea('&lt;span style=&quot;text-decoration:underline;&quot;&gt;&lt;/span&gt;');"/>
+            <toolbarbutton id="StrikeButton" label="刪除" style="text-decoration:line-through;" 
+              onclick="puttextarea('&lt;span style=&quot;text-decoration:line-through;&quot;&gt;&lt;/span&gt;');"/>
+            <toolbarbutton id="SupButton" label="上標"  
+              onclick="puttextarea('&lt;sup&gt;&lt;/sup&gt;');"/>
+            <toolbarbutton id="SubButton" label="下標"  
+              onclick="puttextarea('&lt;sub&gt;&lt;/sub&gt;');"/>
+          </toolbar>
+          <toolbar id="toolfmt2">
+            <toolbarbutton id="TableButton" label="表格"
+              onclick="puttextarea('&lt;TABLE&gt;\n&lt;TR&gt;&lt;TD&gt;\na
+\n&lt;/TD&gt;&lt;TD&gt;\nb\n&lt;/TD&gt;&lt;/TR&gt;\n&lt;/TABLE&gt;');"/>
+            <toolbarbutton id="NumberButton" label="編號"
+              onclick="puttextarea('&lt;ol&gt;\n
+&lt;li&gt;1&lt;/li&gt;\n
+&lt;li&gt;2&lt;/li&gt;\n
+&lt;li&gt;3&lt;/li&gt;\n&lt;/ol&gt;');"/>
+            <toolbarbutton id="DotButton" label="．"
+              onclick="puttextarea('&lt;ul&gt;\n
+&lt;li&gt;...&lt;/li&gt;\n&lt;/ul&gt;');"/>
+            <toolbarbutton id="SepButton" label="分隔線"
+              onclick="puttextarea('&lt;hr style=&quot;width:100%; height:2px;&quot;/&gt;');"/>
+          </toolbar>
+          <toolbar id="toolfmt3">
+            <toolbarbutton id="TabButton" label="縮排"
+              onclick="puttextarea('&lt;div style=&quot;margin-left:40px;&quot;&gt;&lt;/div&gt;');"/>
+            <toolbarbutton id="LeftButton" label="靠左"
+              onclick="puttextarea('&lt;div style=&quot;text-align:left;&quot;&gt;&lt;/div&gt;');"/>
+            <toolbarbutton id="CenterButton" label="置中"
+              onclick="puttextarea('&lt;div style=&quot;text-align:center;&quot;&gt;&lt;/div&gt;');"/>
+            <toolbarbutton id="RightButton" label="靠右"
+              onclick="puttextarea('&lt;div style=&quot;text-align:right;&quot;&gt;&lt;/div&gt;');"/>
+            <toolbarbutton id="JustifyButton" label="左右對齊"
+              onclick="puttextarea('&lt;div style=&quot;text-align:justify;&quot;&gt;&lt;/div&gt;');"/>
+          </toolbar>
+          <toolbar id="toolfmt3">
+            <toolbarbutton id="FontSizeButton" label="字體大小"
+              onclick="puttextarea('&lt;font size=&quot;?&quot;&gt;&lt;/font&gt;');"/>
+            <toolbarbutton id="FontFamilyButton" label="字型"
+              onclick="puttextarea('&lt;span style=&quot;font-family:font-name;&quot;&gt;&lt;/span&gt;');"/>
+            <toolbarbutton id="ForeColorButton" label="字體顏色"
+              onclick="puttextarea('&lt;span style=&quot;color:rgb(0,0,0);&quot;&gt;&lt;/span&gt;');"/>
+            <toolbarbutton id="BackColorButton" label="字體底色"
+              onclick="puttextarea('&lt;span style=&quot;background-color:rgb(255,255,255);&quot;&gt;&lt;/span&gt;');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+  <button flex="1" label="說明" oncommand="openAndReuseOneTabPerURL(helppath());"/>
+</window>

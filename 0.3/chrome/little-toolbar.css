@@ -1,0 +1,13 @@
+/*  skin/toolbar-button.css  */
+
+#little-toolbar-button {
+  list-style-image: url("chrome://little/content/Little24_1.png");
+}
+
+toolbar[iconsize="small"] #little-toolbar-button {
+  list-style-image: url("chrome://little/content/Little16_1.png");
+}
+
+statusbarpanel#little-button {
+  list-style-image: url("chrome://little/content/Little16_1.png");
+}
