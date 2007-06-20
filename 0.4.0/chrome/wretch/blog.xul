@@ -2,12 +2,12 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 
 <window
-  id="a_popup" title="" onunload="OnUnload();"
-  onblur="window.close();"
+  id="a_popup" title="網誌" onunload="OnUnload();"
+  onblur="window.close();" 
   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <script type="application/x-javascript" src="a_popup.js"/>
+  <script type="application/x-javascript" src="blog.js"/>
   <script type="application/x-javascript" src="../lib.js"/>
-  <script type="application/x-javascript" src="saveDocument.js"/>
+  <button flex="1" label="網誌備份" oncommand="blogBack();"/>
   <button flex="1" label="flash延時" oncommand="toggledelay();"/>
   <button flex="1" label="說明" oncommand="openAndReuseOneTabPerURL(helppath());"/>
 </window>
