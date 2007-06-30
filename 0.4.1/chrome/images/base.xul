@@ -1,0 +1,96 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="icon-base"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="../lib.js"/>
+  <script type="application/x-javascript" src="lib.js"/>
+  <tabbox id="mainbox">
+    <tabs id="tabcollection">
+      <tab id="oniontab" label="洋蔥" position="1"/>
+      <tab id="cwwanytab" label="彎彎" position="2"/>
+    </tabs>
+    <tabpanels id="panelcollection">
+      <tabpanel id="onion" position="1">
+        <vbox>
+          <label value="作者：Ethan"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://blog.yam.com/onion_club" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+          <toolbar id="onionico1">
+            <toolbarbutton id="onion/sweat.gif" 
+              image="../images/onion/sweat.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/haha.gif" 
+              image="../images/onion/haha.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/throwtable.gif" 
+              image="../images/onion/throwtable.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/alone.gif" 
+              image="../images/onion/alone.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico2">
+            <toolbarbutton id="onion/dream.gif" 
+              image="../images/onion/dream.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/bye1.gif" 
+              image="../images/onion/bye1.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/shalom.gif" 
+              image="../images/onion/shalom.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/seaweeddance.gif" 
+              image="../images/onion/seaweeddance.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="cwwany" position="2">
+        <vbox>
+          <label value="作者：彎彎"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/cwwany" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+          <toolbar id="cwwanyico1">
+            <toolbarbutton id="cwwany/hot.gif" 
+              image="../images/cwwany/hot.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/cold.gif" 
+              image="../images/cwwany/cold.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/sleepy.gif" 
+              image="../images/cwwany/sleepy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/busy.gif" 
+              image="../images/cwwany/busy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+          <toolbar id="cwwanyico2">
+            <toolbarbutton id="cwwany/happy.gif" 
+              image="../images/cwwany/happy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/congra.gif" 
+              image="../images/cwwany/congra.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/poor.gif" 
+              image="../images/cwwany/poor.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/empty.gif" 
+              image="../images/cwwany/empty.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+</overlay>
