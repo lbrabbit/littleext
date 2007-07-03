@@ -9,7 +9,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="Little@black.rabbit"
                    em:name="My Little Extension 我的小擴充套件"
-                   em:version="0.4.0"
+                   em:version="0.4.2"
                    em:creator="小兔黑黑"
                    em:description="My Little Extension"
                    em:homepageURL="http://littleext.openfoundry.org/"

@@ -13,6 +13,6 @@ function toggledelay () {
 function blogBack () {
   var a_popup = getCurWW().openWindow(null,
     "chrome://little/content/wretch/blogBack.xul", "blogBack", 
-    "chrome,alwaysRaised,centerscreen,resizable", null);
+    "chrome,alwaysRaised,centerscreen,resizable,width=600,height=400", null);
   a_popup.locstr=window.locstr;
 }
