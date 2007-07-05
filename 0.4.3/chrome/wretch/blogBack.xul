@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="blogBack.css" type="text/css"?> 
+
+<window
+  id="blogBack" title="網誌備份" onload="OnLoad();"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="blogBack.js"/>
+  <script type="application/x-javascript" src="../lib.js"/>
+  <script type="application/x-javascript" src="../saveDocument.js"/>
+  <browser id="tmpDocument" type="content" flex="1" 
+    style="height:10em;" src="about:blank"/>
+  <tree id='treBlog' flex="1" seltype="multiple" editable="true" onselect='showNum()'>
+    <treecols>
+	    <treecol flex="0" editable="true" label="選擇" type="checkbox"/>    
+	    <treecol flex="1" editable="true" label="日期"/>
+	    <treecol flex="10" editable="true" label="標題"/>
+	    <treecol flex="4" editable="true" label="位置"/>
+    </treecols>
+    <treechildren id='lstBlog' flex="1"/>
+  </tree>  
+  <hbox flex="0">
+    <label value="備份路徑：" flex="0"/>
+    <textbox id="txtFilePath" readonly="true"  flex="1"/>
+    <button id="btnFilePath" flex="0" label="瀏覽" oncommand="filePath();"/>
+  </hbox>
+  <hbox flex="0">
+    <label id='lblMsg' value="分析網誌" flex="1"/>
+    <?button id="btnTest" flex="0" label="Test" oncommand="btnTest();"/?>
+    <button id="btnSelectUncheck" flex="0" label="選擇不下載" disabled="true" oncommand="selectCheck(false);"/>
+    <button id="btnSelectCheck" flex="0" label="選擇下載" disabled="true" oncommand="selectCheck(true);"/>
+    <splitter/>
+    <button id="btnBlogBack" flex="0" label="備份" disabled="true" oncommand="blogBack();"/>
+    <button id="btnBlogStop" flex="0" label="停止" disabled="true" oncommand="blogStop();"/>
+    <button id="btnClose" flex="0" label="離開" oncommand="window.close();"/>
+  </hbox>
+  <progressmeter id="progress" mode="determined" value="0" />
+</window>

@@ -1,0 +1,340 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="icon-base"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="../lib.js"/>
+  <script type="application/x-javascript" src="lib.js"/>
+  <tabbox id="mainbox">
+    <tabs id="tabcollection">
+      <tab id="oniontab" label="洋蔥" position="1"/>
+      <tab id="cwwanytab" label="彎彎" position="2"/>
+    </tabs>
+    <tabpanels id="panelcollection">
+      <tabpanel id="onion" position="1">
+        <vbox>
+          <label value="作者：Ethan"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://blog.roodo.com/onion_club" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+          <toolbar id="onionico1">
+            <toolbarbutton id="onion/sweat.gif" 
+              image="../images/onion/sweat.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/haha.gif" 
+              image="../images/onion/haha.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/throwtable.gif" 
+              image="../images/onion/throwtable.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/alone.gif" 
+              image="../images/onion/alone.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/achieved.gif"
+              image="../images/onion/achieved.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/anger.gif"
+              image="../images/onion/anger.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/perplex.gif"
+              image="../images/onion/perplex.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/praise.gif"
+              image="../images/onion/praise.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico2">
+            <toolbarbutton id="onion/dream.gif" 
+              image="../images/onion/dream.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/bye1.gif" 
+              image="../images/onion/bye1.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/shalom.gif" 
+              image="../images/onion/shalom.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/seaweeddance.gif" 
+              image="../images/onion/seaweeddance.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/ar.gif"
+              image="../images/onion/ar.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/bath.gif"
+              image="../images/onion/bath.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/whocares.gif"
+              image="../images/onion/whocares.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/yellowcard.gif"
+              image="../images/onion/yellowcard.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico3">
+            <toolbarbutton id="onion/bingo.gif"
+              image="../images/onion/bingo.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/chant.gif"
+              image="../images/onion/chant.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/circle.gif"
+              image="../images/onion/circle.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/classya.gif"
+              image="../images/onion/classya.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/classyb.gif"
+              image="../images/onion/classyb.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/conspire.gif"
+              image="../images/onion/conspire.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/stress.gif"
+              image="../images/onion/stress.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/watery.gif"
+              image="../images/onion/watery.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico4">
+            <toolbarbutton id="onion/redcard.gif"
+              image="../images/onion/redcard.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/redface.gif"
+              image="../images/onion/redface.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/crush.gif"
+              image="../images/onion/crush.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/crybaby.gif"
+              image="../images/onion/crybaby.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/cunning.gif"
+              image="../images/onion/cunning.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/dash.gif"
+              image="../images/onion/dash.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/dizzy.gif"
+              image="../images/onion/dizzy.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/dozy.gif"
+              image="../images/onion/dozy.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico5">
+            <toolbarbutton id="onion/dropdead.gif"
+              image="../images/onion/dropdead.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/explode.gif"
+              image="../images/onion/explode.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/faint.gif"
+              image="../images/onion/faint.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/hitfly01.gif"
+              image="../images/onion/hitfly01.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/hitfly02.gif"
+              image="../images/onion/hitfly02.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/ill.gif"
+              image="../images/onion/ill.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/shock.gif"
+              image="../images/onion/shock.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/shoot.gif"
+              image="../images/onion/shoot.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico6">
+            <toolbarbutton id="onion/isitfate.gif"
+              image="../images/onion/isitfate.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/jolin.gif"
+              image="../images/onion/jolin.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/kneel.gif"
+              image="../images/onion/kneel.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/knockfly01.gif"
+              image="../images/onion/knockfly01.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/knockfly02.gif"
+              image="../images/onion/knockfly02.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/lovebomb.gif"
+              image="../images/onion/lovebomb.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico7">
+            <toolbarbutton id="onion/no.gif"
+              image="../images/onion/no.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/noword.gif"
+              image="../images/onion/noword.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/ohno.gif"
+              image="../images/onion/ohno.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/omg.gif"
+              image="../images/onion/omg.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/oops.gif"
+              image="../images/onion/oops.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/orz1.gif"
+              image="../images/onion/orz1.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="cwwany" position="2">
+        <vbox>
+          <label value="作者：彎彎"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/cwwany" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+          <toolbar id="cwwanyico1">
+            <toolbarbutton id="cwwany/hot.gif" 
+              image="../images/cwwany/hot.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/cold.gif" 
+              image="../images/cwwany/cold.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/sleepy.gif" 
+              image="../images/cwwany/sleepy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/busy.gif" 
+              image="../images/cwwany/busy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/1.gif"
+              image="../images/cwwany/1.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/10.gif"
+              image="../images/cwwany/10.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/11.gif"
+              image="../images/cwwany/11.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/13.gif"
+              image="../images/cwwany/13.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+          <toolbar id="cwwanyico2">
+            <toolbarbutton id="cwwany/happy.gif" 
+              image="../images/cwwany/happy.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/congra.gif" 
+              image="../images/cwwany/congra.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/poor.gif" 
+              image="../images/cwwany/poor.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/empty.gif" 
+              image="../images/cwwany/empty.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/14.gif"
+              image="../images/cwwany/14.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/15.gif"
+              image="../images/cwwany/15.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/17.gif"
+              image="../images/cwwany/17.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/18.gif"
+              image="../images/cwwany/18.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+          <toolbar id="cwwanyico3">
+            <toolbarbutton id="cwwany/2.gif"
+              image="../images/cwwany/2.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/22.gif"
+              image="../images/cwwany/22.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/23.gif"
+              image="../images/cwwany/23.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/25.gif"
+              image="../images/cwwany/25.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/28.gif"
+              image="../images/cwwany/28.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/29.gif"
+              image="../images/cwwany/29.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/30.gif"
+              image="../images/cwwany/30.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/33.gif"
+              image="../images/cwwany/33.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+          <toolbar id="cwwanyico4">
+            <toolbarbutton id="cwwany/34.gif"
+              image="../images/cwwany/34.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/35.gif"
+              image="../images/cwwany/35.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/36.gif"
+              image="../images/cwwany/36.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/37.gif"
+              image="../images/cwwany/37.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/38.gif"
+              image="../images/cwwany/38.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/39.gif"
+              image="../images/cwwany/39.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/40.gif"
+              image="../images/cwwany/40.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/41.gif"
+              image="../images/cwwany/41.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+          <toolbar id="cwwanyico5">
+            <toolbarbutton id="cwwany/42.gif"
+              image="../images/cwwany/42.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/43.gif"
+              image="../images/cwwany/43.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/45.gif"
+              image="../images/cwwany/45.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/48.gif"
+              image="../images/cwwany/48.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/49.gif"
+              image="../images/cwwany/49.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/51.gif"
+              image="../images/cwwany/51.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/8.gif"
+              image="../images/cwwany/8.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+            <toolbarbutton id="cwwany/angry.gif"
+              image="../images/cwwany/angry.gif"
+              onclick="putextbutton(this.id,'cwwany');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+    </tabpanels>
+  </tabbox>
+</overlay>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window
+  id="a_popup" title="Sample" onunload="OnUnload();"
+  onblur="window.close();"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="a_popup.js"/>
+  <script type="application/x-javascript" src="../lib.js"/>
+  <label style="font-size:large">沒有對應功能</label>
+  <button flex="1" label="說明" oncommand="openAndReuseOneTabPerURL(helppath());"/>
+</window>
