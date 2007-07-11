@@ -1,0 +1,4 @@
+content little chrome/
+style chrome://global/content/customizeToolbar.xul chrome://little/content/little-toolbar.css
+overlay	chrome://browser/content/browser.xul chrome://little/content/little-toolbar.xul
+overlay	chrome://browser/content/browser.xul chrome://little/content/delay/delay.xul
