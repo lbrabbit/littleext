@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window
+  id="a_popup" title="Icons" onunload="OnUnload();"
+  onload="OnLoad();"  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="images.js"/>
+  <?xul-overlay href="../images/base.xul"?>
+  <tabbox id="mainbox">
+    <tabs id="tabcollection"/>
+    <tabpanels id="panelcollection"/>
+  </tabbox>
+  <hbox>
+    <label>小圖</label>
+    <textbox id="iconText" flex="1"/>
+    <button id="iconCopy" label="抄" oncommand="iconCopy()"/>
+  </hbox>
+  <hbox>
+    <label>小圖出處</label>
+    <textbox id="creditText" flex="1" multiline="true" rows="1"/>
+    <button id="creditCopy" label="抄" oncommand="creditCopy()"/>
+    <button id="creditClear" label="清" oncommand="creditClear()"/>
+  </hbox>
+  <button flex="1" label="說明" oncommand="openAndReuseOneTabPerURL(helppath());"/>
+</window>
