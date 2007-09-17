@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<window
+  id="a_popup" title="Roodo" onunload="baseOnUnload();"
+  onload="baseOnLoad();"  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="a_popup.js"/>
+  <?xul-overlay href="../images/base.xul"?>
+  <tabbox id="mainbox">
+    <tabs id="tabcollection"/>
+    <tabpanels id="panelcollection"/>
+    <hbox id='lowerbox'>
+      <radiogroup id="mode" hidden="true">
+        <radio id="modeHTML" selected="true"/>
+        <radio id="modephpBB"/>
+      </radiogroup>
+      <checkbox id="modephpBBNoHTML" hidden="true"/>
+    </hbox>        
+  </tabbox>
+  <button flex="1" label="說明" oncommand="openAndReuseOneTabPerURL(helppath());"/>
+</window>

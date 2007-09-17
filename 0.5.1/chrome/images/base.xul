@@ -1,0 +1,259 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="icon-base"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="../lib.js"/>
+  <script type="application/x-javascript" src="lib.js"/>
+  <tabbox id="mainbox">
+    <tabs id="tabcollection">
+      <tab id="oniontab" label="洋蔥" position="1"/>
+      <tab id="cwwanytab" label="彎彎" position="2"/>
+      <tab id="momotab" label="momo" position="3"/>
+      <tab id="fjumonkeytab" label="輔大猴" position="4"/>
+      <tab id="samwootab" label="滷蛋" position="5"/>
+    </tabs>
+    <tabpanels id="panelcollection">
+      <tabpanel id="onion" position="1" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+        <vbox id="onionvbox">
+          <label value="作者：Ethan"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://blog.roodo.com/onion_club" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：姓名標示、禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="cwwany" position="2" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+        <vbox id="cwwanyvbox">
+          <label value="作者：彎彎"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/cwwany" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="momo" position="3" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+        <vbox id="momobox">
+          <label value="作者：王卯卯（MOMO）"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://blog.sina.com.cn/wangmomo" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="fjumonkey" position="4" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+        <vbox id="fjumonkeyvbox">
+          <label value="作者：輔大猴"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/fjumonkey" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="samwoo" position="5">
+        <vbox id="sawmoovbox">
+          <label value="作者：老吳"/>
+          <hbox>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/samwoo" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+          <toolbar id="samwoo1">
+            <toolbarbutton id="samwoo/1226385249.gif"
+              image="../images/samwoo/1226385249.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385250.gif"
+              image="../images/samwoo/1226385250.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385251.gif"
+              image="../images/samwoo/1226385251.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385252.gif"
+              image="../images/samwoo/1226385252.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385253.gif"
+              image="../images/samwoo/1226385253.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385254.gif"
+              image="../images/samwoo/1226385254.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385255.gif"
+              image="../images/samwoo/1226385255.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385259.gif"
+              image="../images/samwoo/1226385259.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+          </toolbar>
+          <toolbar id="samwoo2">
+            <toolbarbutton id="samwoo/1226385260.gif"
+              image="../images/samwoo/1226385260.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385261.gif"
+              image="../images/samwoo/1226385261.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385262.gif"
+              image="../images/samwoo/1226385262.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385269.gif"
+              image="../images/samwoo/1226385269.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385270.gif"
+              image="../images/samwoo/1226385270.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385271.gif"
+              image="../images/samwoo/1226385271.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385274.gif"
+              image="../images/samwoo/1226385274.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1226385275.gif"
+              image="../images/samwoo/1226385275.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+          </toolbar>
+          <toolbar id="samwoo3">
+            <toolbarbutton id="samwoo/1819624393.gif"
+              image="../images/samwoo/1819624393.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624394.gif"
+              image="../images/samwoo/1819624394.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624395.gif"
+              image="../images/samwoo/1819624395.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1823758066.gif"
+              image="../images/samwoo/1823758066.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1823758067.gif"
+              image="../images/samwoo/1823758067.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1823758068.gif"
+              image="../images/samwoo/1823758068.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1823758069.gif"
+              image="../images/samwoo/1823758069.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1823758070.gif"
+              image="../images/samwoo/1823758070.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+          </toolbar>
+          <toolbar id="samwoo4">
+            <toolbarbutton id="samwoo/1823758071.gif"
+              image="../images/samwoo/1823758071.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1823758072.gif"
+              image="../images/samwoo/1823758072.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1823758073.gif"
+              image="../images/samwoo/1823758073.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1823758074.gif"
+              image="../images/samwoo/1823758074.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624401.gif"
+              image="../images/samwoo/1819624401.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624403.gif"
+              image="../images/samwoo/1819624403.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624404.gif"
+              image="../images/samwoo/1819624404.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624405.gif"
+              image="../images/samwoo/1819624405.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+          </toolbar>
+          <toolbar id="samwoo5">              
+            <toolbarbutton id="samwoo/1819624406.gif"
+              image="../images/samwoo/1819624406.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624407.gif"
+              image="../images/samwoo/1819624407.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624408.gif"
+              image="../images/samwoo/1819624408.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624412.gif"
+              image="../images/samwoo/1819624412.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624413.gif"
+              image="../images/samwoo/1819624413.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624414.gif"
+              image="../images/samwoo/1819624414.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624415.gif"
+              image="../images/samwoo/1819624415.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624416.gif"
+              image="../images/samwoo/1819624416.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+          </toolbar>
+          <toolbar id="samwoo6">              
+            <toolbarbutton id="samwoo/1819624417.gif"
+              image="../images/samwoo/1819624417.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624418.gif"
+              image="../images/samwoo/1819624418.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624419.gif"
+              image="../images/samwoo/1819624419.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624420.gif"
+              image="../images/samwoo/1819624420.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624421.gif"
+              image="../images/samwoo/1819624421.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624422.gif"
+              image="../images/samwoo/1819624422.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624423.gif"
+              image="../images/samwoo/1819624423.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624424.gif"
+              image="../images/samwoo/1819624424.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+          </toolbar>
+          <toolbar id="samwoo7">              
+            <toolbarbutton id="samwoo/1819624425.gif"
+              image="../images/samwoo/1819624425.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624426.gif"
+              image="../images/samwoo/1819624426.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624427.gif"
+              image="../images/samwoo/1819624427.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624428.gif"
+              image="../images/samwoo/1819624428.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+            <toolbarbutton id="samwoo/1819624429.gif"
+              image="../images/samwoo/1819624429.gif"
+              onclick="putextbutton(this.id,'samwoo');"/>
+          </toolbar>          
+        </vbox>
+      </tabpanel>
+    </tabpanels>
+    <hbox id='lowerbox'>
+      <radiogroup id="mode" orient="horizontal">
+        <radio flex="1" id="modeHTML" label="HTML" oncommand="cmdmodeHTML();"/>
+        <radio flex="1" id="modephpBB" label="BBCode" oncommand="cmdmodephpBB();"/>
+      </radiogroup>      
+      <checkbox flex="1" id="modephpBBNoHTML" label="不使用HTML"/> 
+    </hbox>
+  </tabbox>
+</overlay>
