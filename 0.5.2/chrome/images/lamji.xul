@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="lamji-icon"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <tabbox id="mainbox">
+    <tabpanels id="panelcollection">
+      <tabpanel id="lamji">
+        <vbox id="lamjivbox">
+          <toolbar id="lamji1">
+            <toolbarbutton id="lamji/angry.gif"
+              image="../images/lamji/angry.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/bellydance.gif"
+              image="../images/lamji/bellydance.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/bored.gif"
+              image="../images/lamji/bored.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/bye.gif"
+              image="../images/lamji/bye.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/cry.gif"
+              image="../images/lamji/cry.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/doubt.gif"
+              image="../images/lamji/doubt.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/err.gif"
+              image="../images/lamji/err.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/eye.gif"
+              image="../images/lamji/eye.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+          </toolbar>
+          <toolbar id="lamji2">
+            <toolbarbutton id="lamji/fatchoy.gif"
+              image="../images/lamji/fatchoy.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/ghost_face.gif"
+              image="../images/lamji/ghost_face.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/haha.gif"
+              image="../images/lamji/haha.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/happy.gif"
+              image="../images/lamji/happy.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/hehe.gif"
+              image="../images/lamji/hehe.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/kiss.gif"
+              image="../images/lamji/kiss.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/laugh.gif"
+              image="../images/lamji/laugh.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/leader.gif"
+              image="../images/lamji/leader.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+          </toolbar>
+          <toolbar id="lamji3">
+            <toolbarbutton id="lamji/love.gif"
+              image="../images/lamji/love.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/red.gif"
+              image="../images/lamji/red.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/shock.gif"
+              image="../images/lamji/shock.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/shy.gif"
+              image="../images/lamji/shy.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/sigh.gif"
+              image="../images/lamji/sigh.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/smile1.gif"
+              image="../images/lamji/smile1.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/smile2.gif"
+              image="../images/lamji/smile2.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/smileeye.gif"
+              image="../images/lamji/smileeye.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+          </toolbar>
+          <toolbar id="lamji4">
+            <toolbarbutton id="lamji/sweat.gif"
+              image="../images/lamji/sweat.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/tired.gif"
+              image="../images/lamji/tired.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/v.gif"
+              image="../images/lamji/v.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/watereye.gif"
+              image="../images/lamji/watereye.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/weep.gif"
+              image="../images/lamji/weep.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/xmas.gif"
+              image="../images/lamji/xmas.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+          </toolbar>
+          <toolbar id="lamji5">
+            <toolbarbutton id="lamji/kinkin_bye.gif"
+              image="../images/lamji/kinkin_bye.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/kinkin_eye.gif"
+              image="../images/lamji/kinkin_eye.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/kinkin_fatchoy.gif"
+              image="../images/lamji/kinkin_fatchoy.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+            <toolbarbutton id="lamji/kinkin_smart.gif"
+              image="../images/lamji/kinkin_smart.gif"
+              onclick="putextbutton(this.id,'lamji');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+    </tabpanels>      
+  </tabbox>
+</overlay>

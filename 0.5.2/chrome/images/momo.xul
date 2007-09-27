@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="momo-icon"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <tabbox id="mainbox">
+    <tabpanels id="panelcollection">
+      <tabpanel id="momo">
+        <vbox id="momobox">
+          <toolbar id="momo1">
+            <toolbarbutton id="momo/4a46b55d02000gy9.gif"
+              image="../images/momo/4a46b55d02000gy9.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000gya.gif"
+              image="../images/momo/4a46b55d02000gya.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000gyb.gif"
+              image="../images/momo/4a46b55d02000gyb.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000h3h.gif"
+              image="../images/momo/4a46b55d02000h3h.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000h3i.gif"
+              image="../images/momo/4a46b55d02000h3i.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000i0v.gif"
+              image="../images/momo/4a46b55d02000i0v.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+          </toolbar>
+          <toolbar id="momo2">
+            <toolbarbutton id="momo/4a46b55d02000i1y.gif"
+              image="../images/momo/4a46b55d02000i1y.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000i54.gif"
+              image="../images/momo/4a46b55d02000i54.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000ieq.gif"
+              image="../images/momo/4a46b55d02000ieq.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000ipq.gif"
+              image="../images/momo/4a46b55d02000ipq.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000irw.gif"
+              image="../images/momo/4a46b55d02000irw.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000j2g.gif"
+              image="../images/momo/4a46b55d02000j2g.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+          </toolbar>
+          <toolbar id="momo3">
+            <toolbarbutton id="momo/4a46b55d02000ja2.gif"
+              image="../images/momo/4a46b55d02000ja2.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000ji3.gif"
+              image="../images/momo/4a46b55d02000ji3.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000jzd.gif"
+              image="../images/momo/4a46b55d02000jzd.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000k7x.gif"
+              image="../images/momo/4a46b55d02000k7x.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000ko1.gif"
+              image="../images/momo/4a46b55d02000ko1.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000n65.gif"
+              image="../images/momo/4a46b55d02000n65.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+          </toolbar>
+          <toolbar id="momo4">
+            <toolbarbutton id="momo/4a46b55d02000nds.gif"
+              image="../images/momo/4a46b55d02000nds.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000nfk.gif"
+              image="../images/momo/4a46b55d02000nfk.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000njn.gif"
+              image="../images/momo/4a46b55d02000njn.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000njs.gif"
+              image="../images/momo/4a46b55d02000njs.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000nkd.gif"
+              image="../images/momo/4a46b55d02000nkd.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000nkq.gif"
+              image="../images/momo/4a46b55d02000nkq.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+          </toolbar>
+          <toolbar id="momo5">
+            <toolbarbutton id="momo/4a46b55d02000nmy.gif"
+              image="../images/momo/4a46b55d02000nmy.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000nn7.gif"
+              image="../images/momo/4a46b55d02000nn7.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000nod.gif"
+              image="../images/momo/4a46b55d02000nod.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000nq8.gif"
+              image="../images/momo/4a46b55d02000nq8.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/4a46b55d02000nr3.gif"
+              image="../images/momo/4a46b55d02000nr3.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+          </toolbar>
+          <toolbar id="momo6">
+            <toolbarbutton id="momo/4a46b55d02000oic.gif"
+              image="../images/momo/4a46b55d02000oic.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+            <toolbarbutton id="momo/sweat.gif"
+              image="../images/momo/sweat.gif"
+              onclick="putextbutton(this.id,'momo');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+    </tabpanels>      
+  </tabbox>
+</overlay>
