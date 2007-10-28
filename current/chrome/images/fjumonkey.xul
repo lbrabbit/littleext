@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="fjumonkey-icon"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <tabbox id="mainbox">
+    <tabpanels id="panelcollection">
+      <tabpanel id="fjumonkey">
+        <vbox id="fjumonkeyvbox">
+          <toolbar id="fjumonkey1">
+            <toolbarbutton id="fjumonkey/angy.gif"
+              image="../images/fjumonkey/angy.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/clap.gif"
+              image="../images/fjumonkey/clap.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/fall.gif"
+              image="../images/fjumonkey/fall.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/footmouth.gif"
+              image="../images/fjumonkey/footmouth.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/fourfour.gif"
+              image="../images/fjumonkey/fourfour.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/laugh.gif"
+              image="../images/fjumonkey/laugh.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/no.gif"
+              image="../images/fjumonkey/no.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+          </toolbar>
+          <toolbar id="fjumonkey2">
+            <toolbarbutton id="fjumonkey/noword.gif"
+              image="../images/fjumonkey/noword.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/perplex.gif"
+              image="../images/fjumonkey/perplex.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/shy.gif"
+              image="../images/fjumonkey/shy.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/smile.gif"
+              image="../images/fjumonkey/smile.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/twirl.gif"
+              image="../images/fjumonkey/twirl.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+            <toolbarbutton id="fjumonkey/weep.gif"
+              image="../images/fjumonkey/weep.gif"
+              onclick="putextbutton(this.id,'fjumonkey');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+    </tabpanels>      
+  </tabbox>
+</overlay>

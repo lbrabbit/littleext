@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://little/content/delay/delay.css" type="text/css"?>
+
+<overlay id="Delay-Overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="delay.js"/>
+  <toolbox id="navigator-toolbox">
+    <toolbar id="delay-toolbar" toolbarname="Delay Toolbar"
+       class="chromeclass-toolbar" context="toolbar-context-menu" 
+       hidden="false" collapsed="true" persist="hidden">
+       <toolbaritem flex="0">
+         <checkbox id="UseDelay" label="使用延時" checked="false" 
+           onclick="window.setTimeout('StartDelay();',500);" />    
+       </toolbaritem>
+       <toolbaritem flex="1">
+         <scrollbar id="Dfactor" flex="10" curpos="199" maxpos="999" 
+           onmousemove="UpdateText();" onclick="UpdateText();"/>
+       </toolbaritem>
+       <toolbaritem flex="0">
+         <label id="txtfactor" size="6" value="200"/>
+       </toolbaritem>
+    </toolbar>
+  </toolbox>
+</overlay>
