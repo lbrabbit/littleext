@@ -52,6 +52,12 @@ function little_toolbar_popup (popupleft,popuptop) {
       "chrome://little/content/discuz/a_popup.xul", "a_popup",
       "chrome,alwaysRaised,left="+popupleft+",top="+popuptop, null);
       a_popup.locstr=locstr;
+/* Special Site Backup
+  }else if (locstr.indexOf("http://Site URL/")!=-1) {
+    var a_popup = getCurWW().openWindow(null,
+      "chrome://little/content/wretch/back.xul", "back", 
+      "chrome,alwaysRaised,centerscreen,resizable,width=600,height=400", null);
+    a_popup.locstr=locstr; */
   }else{
     var a_popup = getCurWW().openWindow(null,
       "chrome://little/content/default/a_popup.xul", "a_popup", 
