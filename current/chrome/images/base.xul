@@ -6,7 +6,7 @@
   <script type="application/x-javascript" src="../lib.js"/>
   <script type="application/x-javascript" src="lib.js"/>
   <tabbox id="mainbox">
-    <tabs id="tabcollection">
+    <tabs id="tabcollection" onselect="tab2Overlay();">
       <tab id="oniontab" label="洋蔥" position="1"/>
       <tab id="cwwanytab" label="彎彎" position="2"/>
       <tab id="momotab" label="兔斯基" position="3"/>
@@ -205,7 +205,7 @@
           </toolbar>
         </vbox>
       </tabpanel>
-      <tabpanel id="cwwany" position="2" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+      <tabpanel id="cwwany" position="2">
         <vbox id="cwwanyvbox">
           <hbox>
             <label flex="10" value="作者：彎彎"/>
@@ -217,7 +217,7 @@
           <label value="使用條件：禁止改作、非商業性"/>
         </vbox>
       </tabpanel>
-      <tabpanel id="momo" position="3" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+      <tabpanel id="momo" position="3">
         <vbox id="momobox">
           <hbox>
             <label flex="10" value="作者：王卯卯（MOMO）"/>
@@ -229,7 +229,7 @@
           <label value="使用條件：禁止改作、非商業性"/>
         </vbox>
       </tabpanel>
-      <tabpanel id="fjumonkey" position="4" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+      <tabpanel id="fjumonkey" position="4">
         <vbox id="fjumonkeyvbox">
           <hbox>
             <label flex="10" value="作者：輔大猴"/>
@@ -247,7 +247,7 @@
           </hbox>
         </vbox>
       </tabpanel>
-      <tabpanel id="samwoo" position="5" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+      <tabpanel id="samwoo" position="5">
         <vbox id="samwoovbox">
           <hbox>
             <label flex="10" value="作者：老吳"/>
@@ -259,7 +259,7 @@
           <label value="使用條件：禁止改作、非商業性"/>
         </vbox>
       </tabpanel>
-      <tabpanel id="sana" position="6" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+      <tabpanel id="sana" position="6">
         <vbox id="sanavbox">
           <hbox>
             <label flex="10" value="作者：SANA(發音近似～紗娜)"/>
@@ -277,7 +277,7 @@
           </hbox>
         </vbox>
       </tabpanel>
-      <tabpanel id="vivian9668" position="7" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+      <tabpanel id="vivian9668" position="7">
         <vbox id="vivian9668vbox">
           <hbox>
             <label flex="10" value="作者：薇薇兔"/>
@@ -289,7 +289,7 @@
           <label value="使用條件：禁止改作、非商業性"/>
         </vbox>
       </tabpanel>
-      <tabpanel id="lamji" position="8" onfocus="document.loadOverlay('chrome://little/content/images/'+this.id+'.xul',null);">
+      <tabpanel id="lamji" position="8">
         <vbox id="lamjivbox">
           <hbox>
             <label flex="10" value="作者：Lamji"/>

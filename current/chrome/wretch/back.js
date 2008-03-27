@@ -1,4 +1,4 @@
-const nsIFilePicker = Components.interfaces.nsIFilePicker;
+﻿const nsIFilePicker = Components.interfaces.nsIFilePicker;
 const pollWait=300;
 var delayCount=-1;
 var loaded=false;
@@ -168,9 +168,35 @@ function createSpecialPages() {
 }
 
 function toRoman (inInt) {
-//http://javascript.internet.com/miscellaneous/roman-numeral-converter.html  var ones_numerals = [];  ones_numerals[0] = "";  ones_numerals[1] = "I";  ones_numerals[2] = "II";  ones_numerals[3] = "III";  ones_numerals[4] = "IV";  ones_numerals[5] = "V";  ones_numerals[6] = "VI";  ones_numerals[7] = "VII";  ones_numerals[8] = "VIII";  ones_numerals[9] = "IX";  var tens_numerals = [];  tens_numerals[0] = "";  tens_numerals[1] = "X";  tens_numerals[2] = "XX";  tens_numerals[3] = "XXX";  tens_numerals[4] = "XL";  tens_numerals[5] = "L";  tens_numerals[6] = "LX";  tens_numerals[7] = "LXX";  tens_numerals[8] = "LXXX";  tens_numerals[9] = "XC";
+//http://javascript.internet.com/miscellaneous/roman-numeral-converter.html
+  var ones_numerals = [];
+  ones_numerals[0] = "";
+  ones_numerals[1] = "I";
+  ones_numerals[2] = "II";
+  ones_numerals[3] = "III";
+  ones_numerals[4] = "IV";
+  ones_numerals[5] = "V";
+  ones_numerals[6] = "VI";
+  ones_numerals[7] = "VII";
+  ones_numerals[8] = "VIII";
+  ones_numerals[9] = "IX";
+  var tens_numerals = [];
+  tens_numerals[0] = "";
+  tens_numerals[1] = "X";
+  tens_numerals[2] = "XX";
+  tens_numerals[3] = "XXX";
+  tens_numerals[4] = "XL";
+  tens_numerals[5] = "L";
+  tens_numerals[6] = "LX";
+  tens_numerals[7] = "LXX";
+  tens_numerals[8] = "LXXX";
+  tens_numerals[9] = "XC";
 
-  inInt=inInt % 100;  var tmp=tens_numerals[Math.floor(inInt/10)]    +ones_numerals[(inInt % 10)];  return tmp.toLowerCase();}
+  inInt=inInt % 100;
+  var tmp=tens_numerals[Math.floor(inInt/10)]
+    +ones_numerals[(inInt % 10)];
+  return tmp.toLowerCase();
+}
 
 function setupBtn() {
   var tmpDocument=document.getElementById("tmpDocument");

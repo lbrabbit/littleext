@@ -227,12 +227,6 @@ function beforecredit(formText,instring) {
 function baseOnLoad() {
   var mainbox=document.getElementById("mainbox");
   mainbox.selectedIndex=getlittleIntPref("tabSelectedIndex");
-  var tabID=mainbox.selectedTab.id;
-  tabID=tabID.substring(0,tabID.length-3);
-  //window.alert(tabID);
-  try { 
-    document.loadOverlay('chrome://little/content/images/'+tabID+'.xul',null);
-  } catch (e) {}
   if(document.getElementById('modeHTML').selected) {
     setmode('HTML');
   }else if(document.getElementById('modephpBB').selected) {
@@ -246,6 +240,16 @@ function baseOnUnload() {
   setlittleIntPref("screenY",window.screenY);
   var mainbox=document.getElementById("mainbox");
   setlittleIntPref("tabSelectedIndex",mainbox.selectedIndex);
+}
+
+function tab2Overlay() {
+  var mainbox=document.getElementById("mainbox");
+  var tabID=mainbox.selectedTab.id;
+  tabID=tabID.substring(0,tabID.length-3);
+  //window.alert(tabID);
+  try { 
+    document.loadOverlay('chrome://little/content/images/'+tabID+'.xul',null);
+  } catch (e) {}  
 }
 
 function baseputextbutton (instring,id) {
