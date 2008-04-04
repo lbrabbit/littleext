@@ -1,0 +1,313 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="icon-base"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="../lib.js"/>
+  <script type="application/x-javascript" src="lib.js"/>
+  <tabbox id="mainbox">
+    <tabs id="tabcollection" onselect="tab2Overlay();">
+      <tab id="oniontab" label="洋蔥" position="1"/>
+      <tab id="cwwanytab" label="彎彎" position="2"/>
+      <tab id="momotab" label="兔斯基" position="3"/>
+      <tab id="fjumonkeytab" label="輔大猴" position="4"/>
+      <tab id="samwootab" label="滷蛋" position="5"/>
+      <tab id="sanatab" label="SANA" position="6"/>      
+      <tab id="vivian9668tab" label="薇薇兔" position="7"/>
+      <tab id="lamjitab" label="Lamji" position="8"/>
+    </tabs>
+    <tabpanels id="panelcollection">
+      <tabpanel id="onion" position="1">
+        <vbox id="onionvbox">
+          <hbox>
+            <label flex="10" value="作者：Ethan"/>          
+            <label value="網站："/>
+            <button label="http://blog.roodo.com/onion_club" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <hbox>
+            <label value="使用條件："/>
+            <button image="../images/cc/by-nc-nd.png" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL('http://creativecommons.org/licenses/by-nc-nd/3.0/')"/>            
+            <label value="姓名標示、禁止改作、非商業性"/>
+          </hbox>  
+         <toolbar id="onionico1">
+            <toolbarbutton id="onion/sweat.gif" 
+              image="../images/onion/sweat.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/haha.gif" 
+              image="../images/onion/haha.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/throwtable.gif" 
+              image="../images/onion/throwtable.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/alone.gif" 
+              image="../images/onion/alone.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/achieved.gif"
+              image="../images/onion/achieved.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/anger.gif"
+              image="../images/onion/anger.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/perplex.gif"
+              image="../images/onion/perplex.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/praise.gif"
+              image="../images/onion/praise.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico2">
+            <toolbarbutton id="onion/dream.gif" 
+              image="../images/onion/dream.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/bye1.gif" 
+              image="../images/onion/bye1.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/shalom.gif" 
+              image="../images/onion/shalom.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/seaweeddance.gif" 
+              image="../images/onion/seaweeddance.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/ar.gif"
+              image="../images/onion/ar.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/bath.gif"
+              image="../images/onion/bath.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/whocares.gif"
+              image="../images/onion/whocares.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/yellowcard.gif"
+              image="../images/onion/yellowcard.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico3">
+            <toolbarbutton id="onion/bingo.gif"
+              image="../images/onion/bingo.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/chant.gif"
+              image="../images/onion/chant.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/circle.gif"
+              image="../images/onion/circle.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/classya.gif"
+              image="../images/onion/classya.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/classyb.gif"
+              image="../images/onion/classyb.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/conspire.gif"
+              image="../images/onion/conspire.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/stress.gif"
+              image="../images/onion/stress.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/watery.gif"
+              image="../images/onion/watery.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico4">
+            <toolbarbutton id="onion/redcard.gif"
+              image="../images/onion/redcard.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/redface.gif"
+              image="../images/onion/redface.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/crush.gif"
+              image="../images/onion/crush.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/crybaby.gif"
+              image="../images/onion/crybaby.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/cunning.gif"
+              image="../images/onion/cunning.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/dash.gif"
+              image="../images/onion/dash.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/dizzy.gif"
+              image="../images/onion/dizzy.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/dozy.gif"
+              image="../images/onion/dozy.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico5">
+            <toolbarbutton id="onion/dropdead.gif"
+              image="../images/onion/dropdead.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/explode.gif"
+              image="../images/onion/explode.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/faint.gif"
+              image="../images/onion/faint.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/hitfly01.gif"
+              image="../images/onion/hitfly01.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/hitfly02.gif"
+              image="../images/onion/hitfly02.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/ill.gif"
+              image="../images/onion/ill.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/shock.gif"
+              image="../images/onion/shock.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/shoot.gif"
+              image="../images/onion/shoot.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico6">
+            <toolbarbutton id="onion/isitfate.gif"
+              image="../images/onion/isitfate.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/jolin.gif"
+              image="../images/onion/jolin.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/kneel.gif"
+              image="../images/onion/kneel.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/knockfly01.gif"
+              image="../images/onion/knockfly01.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/knockfly02.gif"
+              image="../images/onion/knockfly02.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/lovebomb.gif"
+              image="../images/onion/lovebomb.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+          <toolbar id="onionico7">
+            <toolbarbutton id="onion/no.gif"
+              image="../images/onion/no.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/noword.gif"
+              image="../images/onion/noword.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/ohno.gif"
+              image="../images/onion/ohno.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/omg.gif"
+              image="../images/onion/omg.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/oops.gif"
+              image="../images/onion/oops.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+            <toolbarbutton id="onion/orz1.gif"
+              image="../images/onion/orz1.gif"
+              onclick="putextbutton(this.id,'onion');"/>
+          </toolbar>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="cwwany" position="2">
+        <vbox id="cwwanyvbox">
+          <hbox>
+            <label flex="10" value="作者：彎彎"/>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/cwwany" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="momo" position="3">
+        <vbox id="momobox">
+          <hbox>
+            <label flex="10" value="作者：王卯卯（MOMO）"/>
+            <label value="網站："/>
+            <button label="http://blog.sina.com.cn/wangmomo" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="fjumonkey" position="4">
+        <vbox id="fjumonkeyvbox">
+          <hbox>
+            <label flex="10" value="作者：輔大猴"/>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/fjumonkey" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <hbox>
+            <label value="使用條件："/>
+            <button image="../images/cc/by-nc-nd.png" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL('http://creativecommons.org/licenses/by-nc-nd/3.0/')"/>            
+            <label value="姓名標示、禁止改作、非商業性"/>
+          </hbox>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="samwoo" position="5">
+        <vbox id="samwoovbox">
+          <hbox>
+            <label flex="10" value="作者：老吳"/>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/samwoo" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="sana" position="6">
+        <vbox id="sanavbox">
+          <hbox>
+            <label flex="10" value="作者：SANA(發音近似～紗娜)"/>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/sana217" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <hbox>
+            <label value="使用條件："/>
+            <button image="../images/cc/by-nc-nd.png" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL('http://creativecommons.org/licenses/by-nc-nd/3.0/')"/>            
+            <label value="姓名標示、禁止改作、非商業性"/>
+          </hbox>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="vivian9668" position="7">
+        <vbox id="vivian9668vbox">
+          <hbox>
+            <label flex="10" value="作者：薇薇兔"/>
+            <label value="網站："/>
+            <button label="http://www.wretch.cc/blog/vivian9668" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+      <tabpanel id="lamji" position="8">
+        <vbox id="lamjivbox">
+          <hbox>
+            <label flex="10" value="作者：Lamji"/>
+            <label value="網站："/>
+            <button label="http://wailam_628.mysinablog.com/" 
+              style="text-decoration:underline;" 
+              oncommand="openAndReuseOneTabPerURL(this.label)"/>
+          </hbox>
+          <label value="使用條件：禁止改作、非商業性"/>
+        </vbox>
+      </tabpanel>
+    </tabpanels>
+    <hbox id='lowerbox'>
+      <radiogroup id="mode" orient="horizontal">
+        <radio flex="1" id="modeHTML" label="HTML" oncommand="cmdmodeHTML();"/>
+        <radio flex="1" id="modephpBB" label="BBCode" oncommand="cmdmodephpBB();"/>
+      </radiogroup>      
+      <checkbox flex="1" id="modephpBBNoHTML" label="不使用HTML"/> 
+    </hbox>
+  </tabbox>
+</overlay>
