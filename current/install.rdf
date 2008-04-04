@@ -4,17 +4,18 @@
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="rdf:#$hDO7.1"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="1.5"
-                   em:maxVersion="2.*" />
+                   em:minVersion="2.0"
+                   em:maxVersion="3.*" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="Little@black.rabbit"
                    em:name="My Little Extension 我的小擴充套件"
-                   em:version="0.5.2"
+                   em:version="0.5.3"
                    em:creator="小兔黑黑"
                    em:description="My Little Extension"
                    em:homepageURL="http://littleext.openfoundry.org/"
-                   em:updateURL="http://littleext.openfoundry.org/update.xml"
-                   em:iconURL="chrome://little/content/Little24_1.png">
+                   em:iconURL="chrome://little/content/Little24_1.png"
+                   em:updateURL="http://littleext.openfoundry.org/update.xml"                   
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD6T3GcptAhxGMHOdcC/cPKVUxnBUV5nE8GROXLLYbKQf84J5GAeKLyKepHIDsnuu65A87Tkxbq6FN3hVQe5z05oyq4Jt47TE2cL09B2/S1g7tTaXNq1qbiYWyi2wU5XwQJ2s1qeEZbXv4TKuDpuLR9i5T64tiUDfD0TQvThj30OQIDAQAB">
     <em:targetApplication RDF:resource="rdf:#$hDO7.1"/>
   </RDF:Description>
 </RDF:RDF>

@@ -253,8 +253,8 @@ function tab2Overlay() {
 }
 
 function baseputextbutton (instring,id) {
-  oinstring=extpath+instring;
+  oinstring=instring;
   oid=id;
   
-  puttextarea(addimg(oinstring,id),id);  
+  puttextarea(addimg(extpath+instring,id),id);  
 }
