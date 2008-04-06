@@ -52,6 +52,11 @@ function little_toolbar_popup (popupleft,popuptop) {
       "chrome://little/content/discuz/a_popup.xul", "a_popup",
       "chrome,alwaysRaised,left="+popupleft+",top="+popuptop, null);
       a_popup.locstr=locstr;
+  }else if (locstr.search(/hk\.myblog\.yahoo\.com\/\w+/i)!=-1) {
+    var a_popup = getCurWW().openWindow(null,
+      "chrome://little/content/yblog/blog.xul", "a_popup", 
+      "chrome,alwaysRaised,left="+popupleft+",top="+popuptop, null);
+    a_popup.locstr=locstr;
 /* Special Site Backup
   }else if (locstr.indexOf("http://Site URL/")!=-1) {
     var a_popup = getCurWW().openWindow(null,
