@@ -55,17 +55,34 @@ function collectBlogRows(){
   tmpDocument=tmpDocument.contentDocument;
 //  if (tmpDocument.documentElement.innerHTML.indexOf('uncompressed/chunked')!=-1)
 //    reload(tmpDocument.location);
-  var divThird2 = tmpDocument.getElementById("divThird2");  
-  if (!divThird2) {
+  var thisBody = tmpDocument.evaluate('//body', 
+    tmpDocument,
+    null,
+    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+    null).snapshotItem(0);
+  
+  if (!thisBody) {
     window.setTimeout('collectBlogRows()',pollWait);
+    window.alert('thisBody');
     return;
-  }   
+  }
+  var main_hd=tmpDocument.evaluate("//div[@class='main-hd']", 
+    thisBody,
+    null,
+    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+    null).snapshotItem(0);
+  if (!main_hd) {
+    window.setTimeout('collectBlogRows()',pollWait);
+    window.alert('main_hd');
+    return;
+  }
+     
   var objList=tmpDocument.getElementsByTagName("div"); 
   for (var i = 0 ; i<objList.length; i++)  
     if (objList[i].getAttribute("class") == "articletext")
       break 
   if (i>=objList.length) {     
-    //window.alert('有問題1...'+i); 
+    window.alert('有問題1...'+i); 
     window.setTimeout('collectBlogRows()',pollWait);
     return;
   } else {
