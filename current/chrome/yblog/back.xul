@@ -8,8 +8,13 @@
   <script type="application/x-javascript" src="back.js"/>
   <script type="application/x-javascript" src="../lib.js"/>
   <script type="application/x-javascript" src="../saveDocument.js"/>
+  <keyset>
+    <key id="refresh-key" modifiers="control" key="R" 
+      oncommand="reload(document.getElementById('tmpDocument').currentURI.spec);
+                 window.alert('重新載入中');"/>
+  </keyset>  
   <browser id="tmpDocument" type="content" flex="1" 
-    style="height:10em;" src="about:blank"/>
+    style="height:10em;" src="about:blank" key="refresh-key"/>
   <tree id='treEntry' flex="1" seltype="multiple" editable="true" onselect='showNum()'>
     <treecols>
 	    <treecol flex="0" editable="true" label="選擇" type="checkbox"/>    

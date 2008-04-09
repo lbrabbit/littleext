@@ -8,8 +8,10 @@ var listPageCount=0;
 function OnLoad() {
   var tmpDocument=document.getElementById("tmpDocument");
   tmpDocument.addEventListener('load', testLoad, true);
-  if (window.locstr.indexOf("http://hk.myblog.yahoo.com/")!=-1) {
-    tmpDocument.setAttribute('src',window.locstr);
+  var locstr=window.locstr;
+  if (locstr.indexOf("http://hk.myblog.yahoo.com/")!=-1) {
+    locstr=locstr.replace(/\/index\?&page=\d+$/,'');
+    tmpDocument.setAttribute('src',locstr);
     window.setTimeout('collectBlogRows()',100);
     loaded=false;
     document.title='網誌備份';
@@ -42,6 +44,21 @@ function reload(url) {
   tmpDocument.setAttribute('src','about:blank');  
 }
 
+function extractEle(ele){
+  var found;
+  var obj={};
+  if (found=ele.innerHTML
+    .match(/<a\shref=\"http:\/\/hk\.rd\.yahoo\.com\/blog\/mod\/art_title\/\*([^\>\<\"]+)\"\s*[^\>\<]*>(.+)<\/a><\/h/im)) {	    
+    obj['link']=found[1].replace('&amp;','&');
+    obj['title']=normTitle(found[2]);
+  }
+  if (found=ele.innerHTML
+    .match(/(\d{4}-\d{2}-\d{2})\s\d+:\d+/)) {    
+    obj['date']=found[1];
+  }  
+  buildLst(obj);
+}
+
 function collectBlogRows(){
   //window.alert('成功了');
   var tmpDocument=document.getElementById("tmpDocument");
@@ -59,75 +76,82 @@ function collectBlogRows(){
     tmpDocument,
     null,
     XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
-    null).snapshotItem(0);
-  
+    null).snapshotItem(0);  
   if (!thisBody) {
     window.setTimeout('collectBlogRows()',pollWait);
     window.alert('thisBody');
     return;
   }
+
+  var rights=tmpDocument.evaluate("//div[@class='rights']", 
+    thisBody,
+    null,
+    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+    null).snapshotItem(0);
+  if (!rights) {
+    window.setTimeout('collectBlogRows()',pollWait);
+    //window.alert('rights');
+    return;
+  }
+  
   var main_hd=tmpDocument.evaluate("//div[@class='main-hd']", 
     thisBody,
     null,
     XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
     null).snapshotItem(0);
-  if (!main_hd) {
-    window.setTimeout('collectBlogRows()',pollWait);
-    window.alert('main_hd');
-    return;
+  if (main_hd) {
+    extractEle(main_hd);
   }
-     
-  var objList=tmpDocument.getElementsByTagName("div"); 
-  for (var i = 0 ; i<objList.length; i++)  
-    if (objList[i].getAttribute("class") == "articletext")
-      break 
-  if (i>=objList.length) {     
-    window.alert('有問題1...'+i); 
+  
+/*  var comment_more=tmpDocument.evaluate("//div[@class='comment-more']", 
+    thisBody,
+    null,
+    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+    null).snapshotItem(0);
+  if (!comment_more) {
     window.setTimeout('collectBlogRows()',pollWait);
+    window.alert('comment_more');
     return;
-  } else {
-    var articletext=objList[i];
-    if (listPageCount==0) {
-      objList=articletext.getElementsByTagName("div");
-      for (var i = 0 ; i<objList.length; i++)  
-        if (objList[i].getAttribute("class") == "list-linkcontrol")
-          break    
-      if (i>=objList.length) {     
-        window.alert('有問題2...'); 
-      } else {
-        objList=objList[i].getElementsByTagName("a");
-        if (objList.length>0) {
-          //window.alert(objList[objList.length-2]+'  '+objList.length)
-          listPageCount=objList.length;
-        } else {
-          listPageCount=1;
-        }        
-      }
-      listPage=1;
+  }    
+  var objList=comment_more.getElementsByTagName("ul");
+  objList=objList[0].getElementsByTagName("li"); 
+  for (var i = 0 ; i<objList.length; i++)  
+    extractEle(objList[i]);*/
+
+  var mod_alist=tmpDocument.evaluate("//div[@class='mod-alist']", 
+    thisBody,
+    null,
+    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+    null);
+  if (mod_alist) {
+    for (var i = 0 ; i<mod_alist.snapshotLength; i++) {
+      extractEle(mod_alist.snapshotItem(i));
     }
-    objList=articletext.getElementsByTagName("table");
-    objList=objList[0].getElementsByTagName("td");
-    for (var i = 0 ; i<objList.length; i++) { 
-      var found;
-      if (found=objList[i].innerHTML
-        .match(/(\d{4}\.\d{2}\.\d{2})\s\<a\shref=\"([^\>\<\"]+)\"\>(.+)<\/a\>/m)) {
-        var obj={};
-        obj['date']=found[1].replace(/\./g,'-');
-        obj['link']=found[2].replace('&amp;','&');
-        obj['title']=normTitle(found[3]);
-        buildLst(obj);
-      }
-    }
-    listPage++;
-    var tmpDocument=document.getElementById("tmpDocument");
-    if (listPage<listPageCount+1) {
-      tmpDocument.setAttribute('src',window.locstr+'&list=1&page='+listPage);  
+  }    
+        
+  var pagination=tmpDocument.evaluate("//div[@class='pagination']", 
+    thisBody,
+    null,
+    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+    null).snapshotItem(0);
+  if (!pagination) {
+    setupBtn();
+    saveObj.minLen=9*1024;
+  }else{  
+    var nextPage=tmpDocument.evaluate("//a[@class='next']", 
+      pagination,
+      null,
+      XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+      null).snapshotItem(0);
+    if (nextPage) {
+      var tmpDocument=document.getElementById("tmpDocument");
+      tmpDocument.setAttribute('src',nextPage.href);  
       window.setTimeout('collectBlogRows()',pollWait);
-      loaded=false;      
-    }else {
+      loaded=false;   
+    } else {
       setupBtn();
       saveObj.minLen=9*1024;
-    }
+    }   
   }
 }
 
@@ -168,7 +192,8 @@ function buildLst (obj) {
 function normTitle(instring) {
   instring=instring.replace(
     '<img src="http://pic.wretch.cc/photos/icon/blog/lock.gif" border="0">','LOCKED ');
-  instring=instring.replace(/\<img[^\>]+\>/g,'ICO ');
+  instring=instring.replace(/<img[^\>]+>/g,'ICO ');
+  instring=instring.replace(/<em[^\>]+><\/em>/g,'ICO ');
   
   //Invalid char for file name
   instring=instring.replace(/\\/g,'＼');
@@ -180,6 +205,7 @@ function normTitle(instring) {
   instring=instring.replace(/\"/g,'”');
   instring=instring.replace(/\</g,'＜');
   instring=instring.replace(/\>/g,'＞');
+  instring=instring.replace('&amp;','&');
   return instring;
 }
 
