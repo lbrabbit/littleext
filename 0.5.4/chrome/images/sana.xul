@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<overlay id="sana-icon"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <tabbox id="mainbox">
+    <tabpanels id="panelcollection">
+      <tabpanel id="sana">
+        <vbox id="sanavbox">
+          <toolbar id="sana0">        
+            <toolbarbutton id="sana/BowSANA.gif"
+              image="../images/sana/BowSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/DownSANA.gif"
+              image="../images/sana/DownSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/EyeSANA.gif"
+              image="../images/sana/EyeSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/MailSANA.gif"
+              image="../images/sana/MailSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/monkeySANA.gif"
+              image="../images/sana/monkeySANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/NodSANA.gif"
+              image="../images/sana/NodSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/RideSANA.gif"
+              image="../images/sana/RideSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/RopeSANA.gif"
+              image="../images/sana/RopeSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/RoundSANA.gif"
+              image="../images/sana/RoundSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/ShakeSANA.gif"
+              image="../images/sana/ShakeSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/SnoozeSANA.gif"
+              image="../images/sana/SnoozeSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/TalkSANA.gif"
+              image="../images/sana/TalkSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/TeachSANA.gif"
+              image="../images/sana/TeachSANA.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+          </toolbar>
+          <toolbar id="sana1">
+            <toolbarbutton id="sana/1058742874.gif"
+              image="../images/sana/1058742874.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742875.gif"
+              image="../images/sana/1058742875.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742876.gif"
+              image="../images/sana/1058742876.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742877.gif"
+              image="../images/sana/1058742877.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742878.gif"
+              image="../images/sana/1058742878.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742879.gif"
+              image="../images/sana/1058742879.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742880.gif"
+              image="../images/sana/1058742880.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742881.gif"
+              image="../images/sana/1058742881.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+          </toolbar>
+          <toolbar id="sana2">
+            <toolbarbutton id="sana/1058742882.gif"
+              image="../images/sana/1058742882.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742883.gif"
+              image="../images/sana/1058742883.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742884.gif"
+              image="../images/sana/1058742884.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742885.gif"
+              image="../images/sana/1058742885.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+          </toolbar>          
+          <toolbar id="sana3">          
+            <toolbarbutton id="sana/1058742886.gif"
+              image="../images/sana/1058742886.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742887.gif"
+              image="../images/sana/1058742887.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742888.gif"
+              image="../images/sana/1058742888.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742889.gif"
+              image="../images/sana/1058742889.gif"
+              onclick="putextbutton(this.id,'sana');"/>
+            <toolbarbutton id="sana/1058742890.gif"
+              image="../images/sana/1058742890.gif"
+              onclick="putextbutton(this.id,'sana');"/>          
+          </toolbar>
+        </vbox>
+      </tabpanel>
+    </tabpanels>      
+  </tabbox>
+</overlay>
