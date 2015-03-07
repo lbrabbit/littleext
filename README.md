@@ -1,6 +1,8 @@
 # littleext
 Little Extension for Firefox 這個小擴充軟體可以讓你的火狐有更多的秘技，你也可以自行加入你想要的秘技。
 
+This is a record of the project hosted previously on OpenFoundry https://www.openfoundry.org/of/projects/617
+
 - Maturity：	BETA
 - Licensing Description：	根據圖文作者要求授權，最基本授權要求不低於by-nc-nd，但不一定以CC授權
 - Created at：	2006-06-13 20:55 +08:00
